@@ -1,0 +1,138 @@
+html {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #dad8df;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23000000' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quote-container {
+
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+
+    font-size: 2.75rem;
+}
+
+.long-quote {
+
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+
+    font-size: 2rem;
+    font-weight: 400;
+    color: #57555d;
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+    margin-top: 15px;
+
+}
+
+.button-container {
+
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+
+}
+
+button {
+
+    cursor: pointer;
+    height: 2.5rem;
+    border: none;
+    padding: 0.2rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(45, 42, 42);
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+
+    filter: brightness(117%);
+}
+
+button:active {
+
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+
+#twitter:hover {
+
+    color: rgb(17, 154, 252);
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+/* loader */
+
+.loader {
+    border: 16px solid #f3f3f3;
+
+    border-top: 16px solid #626364;
+
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:1000px) {
+
+    .quote-container {
+
+        margin: auto 10px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+
+    .quote-author {
+        font-size: 0.95rem;
+    }
+}
