@@ -2,7 +2,7 @@ let quote = [];
 
 let quotebtn = document.querySelector('#new-quote');
 
-let qoutetext = document.querySelector('#quote');
+let quotetext = document.querySelector('#quote');
 
 let qcontainer = document.querySelector('.quote-container');
 
@@ -33,13 +33,13 @@ function newquote() {
     let r = Math.floor(Math.random() * quote.length);
 
     if (quote[r].text.length > 40) {
-        qoutetext.classList.add('long-quote');
+        quotetext.classList.add('long-quote');
     }
     else {
-        qoutetext.classList.remove('long-quote');
+        quotetext.classList.remove('long-quote');
     }
 
-    qoutetext.innerText = quote[r].text;
+    quotetext.innerText = quote[r].text;
 
     authortext.innerText = quote[r].author;
 
@@ -72,7 +72,7 @@ let getquote = async () => {
 
 function tweetquote() {
 
-    const twturl = `https://x.com/compose/post?text=${qoutetext.innerText} - ${authortext.innerText}`;
+    const twturl = `https://x.com/compose/post?text=${quotetext.innerText} - ${authortext.innerText}`;
     window.open(twturl, '_blank');
 
 }
