@@ -34,6 +34,7 @@ function newquote() {
 
     if (quote[r].text.length > 40) {
         quotetext.classList.add('long-quote');
+        authortext.classList.add('long-atext');
     }
     else {
         quotetext.classList.remove('long-quote');
